@@ -1,0 +1,524 @@
+/* PLACE YOUR CUSTOM STYLES IN THIS FILE */
+@font-face { font-family: valentine; src: url('../fonts/mises.otf'); }
+
+.valentine { font-family: valentine;
+    text-shadow: 1px 3px 2px #000000;
+}
+
+@font-face { font-family: zombiebites; src: url('../fonts/zombiebites.ttf'); }
+
+.zombiebites { font-family: zombiebites;
+    text-shadow: 1px 3px 2px #000000;}
+
+.feature{
+    text-shadow: 1px 2px 2px #000000;
+}
+
+.notificheMenu{
+    background-color: white !important;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 0 !important;
+}
+
+
+
+
+
+.line{
+    border-bottom: 1px solid black;
+}
+@font-face { font-family: bowbly; src: url('../fonts/bowbly.ttf'); }
+
+.bowbly { font-family: bowbly;
+    text-shadow: 1px 3px 2px #000000;}
+
+
+@font-face { font-family: quicksand; src: url('../fonts/quicksand.otf'); }
+
+.quicksand { font-family: quicksand;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: larger;
+}
+
+.quicksand-small { font-family: quicksand;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+@font-face { font-family: topsecret; src: url('../fonts/topsecret.ttf'); }
+
+.topsecret { font-family: topsecret;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: larger;
+}
+
+
+.declassified{
+    font-size: xx-large;
+    float: right;
+    position: relative;
+    transform: rotate(-5deg);
+}
+.displayblock{
+    display: block;
+}
+
+.large{
+    font-size: large;
+}
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.steps .steps-container {
+    width: 100rem !important;
+
+}
+.overflowauto{
+    overflow: auto;
+}
+
+.arrowRispondi{
+    float: right;
+    margin:  1.8rem;
+    font-size: 2rem;
+}
+
+.inputRisposta{
+    width: 80%;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+
+.headerRisposta{
+    background-color: rgb(62, 59, 92); !important;
+    padding: 0.1rem 1.8rem !important;
+}
+
+.divrisposte{
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #dddddd;
+}
+
+.steps .steps-container li .step {
+    padding: 0 !important;
+}
+
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.badgeLeft{
+    position: unset !important;
+    float: left;
+}
+
+.w100{
+    width: auto;
+    margin: 1rem;
+}
+
+.fontxlarge{
+    font-size: x-large;
+}
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+.navbar-toggle {
+    display: block !important;
+}
+
+.panel-group .newMessage > .panel-heading::after {
+    background: rgba(222, 0, 255, 0.55) !important;
+}
+
+.minH7vh{
+    min-height: 7vh;
+}
+
+.scrollable{
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.betaTest{
+    color: white;
+    font-size: x-large;
+    padding-top: .5rem;
+}
+
+.navbar-toggle {
+    padding: 0;
+}
+
+.slidingText{
+    margin-top: 10px;
+    background-color: #c100c1;;
+}
+
+.redcolor{
+    color: red;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e8bcf1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c100c1;;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c100c1;;
+}
+
+.rightDomande{
+    float: right;
+}
+
+.leftDomande{
+    float: left;
+}
+
+.domande{
+    font-size: x-large;
+}
+
+.risposta{
+    float: right;
+    margin-top: 10px;
+}
+
+.blacktext{
+    color: black !important;
+    text-shadow: none;
+}
+
+.marginTop20{
+    margin-top: 20px;
+}
+.marginBottom20{
+    margin-bottom: 20px;
+}
+
+.centered{
+    text-align: center;
+}
+.altezzaTab{
+    min-height: 25vh;
+    border-radius: 13px;
+    background-color: #494792;
+
+}
+
+.scrollable{
+    overflow-x: hidden;
+}
+
+.textxxl{
+    font-size: xx-large;
+}
+
+.padding15{
+    padding: 30px;
+
+}
+
+.social-icon{
+    cursor: pointer;
+}
+
+.nopad{
+    padding: 0 !important;
+}
+
+
+.whiteBG{
+    background-color: white;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+
+.avatarimg{
+    object-fit: cover;
+    height: 50px;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.sfondoclass{
+    background-color: #aaaaaa14;
+    border-radius: 13px;
+
+}
+.classArti{
+    background-color: #2a2748;
+    padding: 0.5rem;
+    border-radius: 13px;
+}
+.coppa{
+    font-size: medium;
+    color: gold;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #d92b4c; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 15px;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #d92b4c; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 15px;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .carousel-caption {
+        right: 5%;
+        left: 40%;
+        padding-bottom: 35%;
+    }
+
+
+}
+
+.whiteText{
+    color: white;
+}
+
+.loginpopup{
+    padding: 1rem;
+    width: 20rem;
+}
+.inputpopup{
+    background-color: whitesmoke !important;
+    color: #202020 !important;
+}
+
+.content-wrap .hotstuff-content {
+    margin-top: 3rem;
+}
+
+.sezTitle{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.tabpad{
+    float: left !important;
+    padding: 1rem 1rem !important;
+}
+
+.typewrite{
+    text-decoration: none;
+}
+
+.mobile{
+    display: none;
+}
+
+.like{
+    margin-top: .7rem;
+}
+
+.padright{
+    padding-right: 10px;
+}
+.padleft{
+    padding-left: 10px;
+}
+
+.swal2-title{
+    font-family: valentine;
+    font-size: x-large !important;
+    text-shadow: none;
+}
+
+#swal2-content{
+    font-family: quicksand;
+    font-size: initial;
+}
+
+.testoscorr{
+    height: 1.5rem;
+}
+
+.paddingtop10{
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 990px) {
+    .paddingtop10 {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hotstuff-forum > li > div .reply {
+        margin:0;
+    }
+
+    .iniavv{
+        font-size: 28px;
+    }
+
+    .nascondiDesk {
+        display: inline;
+    }
+
+    .nav-tabs > li > a,
+    .nav-tabs > li > a:focus,
+    .nav-tabs > li > a:hover,
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover {
+        padding: 1rem 1rem;
+        font-size: x-large;
+    }
+
+    .tab-content > .tab-pane {
+        padding: 1rem;
+    }
+
+    .hotstuff-forum > li li {
+        float: left !important;
+        padding: 1rem 0rem !important;
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-right: 0;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .featureHome{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .angled-bg::after {
+        transform: none;
+    }
+
+    footer .social .social-icons .social-icon > a {
+        padding: 10px 10px;
+    }
+
+    footer .social .social-icons .social-icon {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hotstuff-banner .info {
+
+         padding: 0;
+    }
+
+    .hotstuff-forum > li > div .avatar {
+
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .text{
+        padding: 1rem;
+    }
+
+
+
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display:unset;
+    }
+
+
+
+}

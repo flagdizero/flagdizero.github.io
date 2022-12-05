@@ -1,0 +1,114 @@
+<div class="container">
+    <h3 class="quicksand">Connettiti ai social di <span class="valentine">HotStuffGames</span></h3>
+
+    <div class="social-icons">
+        <div class="social-icon">
+            <a onclick="vaiALink('https://www.instagram.com/hotstuffgames/')" >
+                <!--                                        <i class="fab fa-instagram"></i>-->
+                <img src="assets/images/insta.png" width="50px">
+                <!--                                        <span class="quicksand-small">Seguici su instagram per aggiornamenti settimanali</span>-->
+            </a>
+        </div>
+        <div class="social-icon">
+            <a onclick="vaiALink('https://www.facebook.com/hotstuffgames/')">
+                <!--                                        <i class="fab fa-facebook"></i>-->
+                <img src="assets/images/fb.png" width="50px">
+
+
+                <!--                                        <span class="quicksand-small">Seguici su Facebook per aggiornamenti settimanali</span>-->
+            </a>
+        </div>
+        <div class="social-icon">
+            <a onclick="vaiALink('https://www.youtube.com/channel/UCDomoclaUXCpGBTJJtU_Drg')">
+                <img src="assets/images/yt.png" width="50px">
+
+                <!--                                        <i class="fab fa-youtube"></i>-->
+                <!--                                        <span class="quicksand-small">Iscriviti al canale youtube per tutorial su game dev</span>-->
+            </a>
+        </div>
+        <div class="social-icon">
+            <a onclick="vaiALink('https://twitter.com/flagDiZero')">
+                <!--                                        <i class="fab fa-twitter-square"></i>-->
+                <img src="assets/images/tw.png" width="50px">
+
+                <!--                                        <span class="quicksand-small">Seguici su on Twitter</span>-->
+            </a>
+        </div>
+        <div class="social-icon">
+            <a onclick="vaiALink('https://discord.gg/Fk8bAMW')">
+                <img src="assets/images/discord.png" width="50px">
+
+                <!--                                        <i class="fab fa-discord"></i>-->
+                <!--                                        <span class="quicksand-small">Server discord</span>-->
+            </a>
+        </div>
+        <h4 class="testoscorr">
+            <a href="" class="quicksand typewrite" data-period="1500" data-type='[ "Su instagram pubblico aggiornamenti settimanali", "Su YouTube a breve pubblicherò dei tutorial base su Unity", "Su discord potrete chiedermi quello che volete", "Sono anche su Twitter e Facebook" ]'>
+                <span class="wrap"></span>
+            </a>
+        </h4>
+    </div>
+
+
+</div>
+
+
+<script>
+
+    //made by vipul mirajkar thevipulm.appspot.com
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 100;
+        }
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+</script>
